@@ -1,4 +1,4 @@
-package ps_test;
+package ProGrammers;
 
 public class introduction_Hate {
     public static void main(String[] args) {

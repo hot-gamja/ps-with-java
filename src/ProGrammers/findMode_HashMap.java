@@ -1,4 +1,4 @@
-package ps_test;
+package ProGrammers;
 
 import java.util.HashMap;
 import java.util.Map;
