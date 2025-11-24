@@ -17,18 +17,21 @@ public class Backjoon_2480 {
         for(int i=0; i<3; i++){
             list.add(Integer.parseInt(st.nextToken()));
         }
-        if(list.get(0)==list.get(1)){
-            if(list.get(0)==list.get(2)){
-                System.out.println(10000+(list.get(0)*1000));
-            }else System.out.println(1000+list.get(0)*100);
-        }else if(list.get(0)==list.get(3)){
-            System.out.println(1000+list.get(1)*100);
-        }else if(list.get(1)==list.get(2)){
-            System.out.println(1000+list.get(0)*100);
+        int a= list.get(0);
+        int b= list.get(1);
+        int c= list.get(2);
+        int prize = 0;
+        if(a==b && b==c ){
+           prize = 10000+a*1000;
+        }else if(a==b || a==c ){
+            prize = 1000+a*100;
+        }else if(b==c){
+            prize = 1000+b*100;
         }else {
             Collections.sort(list);
-            System.out.println(list.get(2)*100);
+            prize = list.get(2)*100;
         }
+        System.out.println(prize);
         
     }
     
