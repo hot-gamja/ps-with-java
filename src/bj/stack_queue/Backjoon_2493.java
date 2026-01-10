@@ -20,20 +20,18 @@ public class Backjoon_2493 {
         for (int i = 1; i <= n; i++) {
             int h = Integer.parseInt(st.nextToken());
 
-            while (top >= 0 && stackH[top] < h)
+            while (top >= 0 && stackH[top] < h){
                 top--;
+            }
             int response = (top == -1) ? 0 : stackIdx[top];
             sb.append(response);
-            if (i < n)
+            if (i < n) {
                 sb.append(' ');
-
+            }
             stackIdx[++top] = i;
             stackH[top] = h;
-
         }
-
         System.out.print(sb);
-
     }
 
 }
