@@ -17,6 +17,7 @@ public class Backjoon_17219 {
 
         for (int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine());
+
             String site = st.nextToken();
             String pw = st.nextToken();
 
